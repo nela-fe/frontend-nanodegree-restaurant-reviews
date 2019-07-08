@@ -157,12 +157,12 @@ nav h1 a {
 }
 
 
-
+/*
 @media screen and (min-width: 576px) {
   #map-container {
     position: fixed;
   }
-}
+} */
 
 @media screen and (min-width: 768px) {
   #map-container {
@@ -195,6 +195,7 @@ nav h1 a {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  z-index: 1000;
   /* z-index: 22100; */
 
   /* height: 500px; */
@@ -226,10 +227,7 @@ nav h1 a {
 @media (min-width: 576px) {
   .filter-options {
 
-    position: fixed;
-    top: 254px;
-
-    z-index: 1000;
+    /* top: 254px; */
 
 
     /* width: 100%; */
@@ -244,8 +242,11 @@ nav h1 a {
 @media screen and (min-width: 768px) {
 
 .filter-options {
+
+  position: fixed;
+  /* top: 254px; */
   top: 64px;
-  /* width: 50%; */
+  width: 100%;
 }
 
   .filter-options h2 {
@@ -287,7 +288,8 @@ nav h1 a {
 
 @media screen and (min-width: 768px) {
   #restaurants-list {
-
+    position: absolute;
+    top: 120px;
   width: 50%;
 
   }
@@ -328,6 +330,7 @@ nav h1 a {
 @media screen and (min-width: 768px) {
 
   #restaurants-list li {
+
     width: 48%;
     margin: 6px 1%;
 
