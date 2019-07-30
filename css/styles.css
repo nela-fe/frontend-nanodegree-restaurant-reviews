@@ -57,8 +57,12 @@ header {
   background-color: #f3f3f3;
   /* min-height: 100%; */ /*??*/
   width: 100%;
-  /* display: flex;
+  /* this has no effect on elements but makes map on home vanish...
+  */
+/*
+  display: flex;
   flex-wrap: wrap; */
+
 }
 
 #footer {
@@ -66,20 +70,25 @@ header {
   color: #aaa;
   font-size: 8pt;
   letter-spacing: 1px;
-  padding: 25px;
+  padding: 10px;
   text-align: center;
   text-transform: uppercase;
 }
 
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
  #footer {
-  bottom: 0;
-  position: absolute;
-  width: 50%;
+    /* position: absolute; */
+    position: fixed;
+  /* bottom: 0; */
+  /* top: 200px; */
+  bottom: 0px;
+
+  width: 100%;
+  z-index: 2000;
  }
-} */
+}
 
 
 
@@ -93,25 +102,32 @@ nav {
 }
 nav h1 {
   margin: auto;
-
-}
-nav h1 a {
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 200;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   text-transform: uppercase;
   display: block;
-  padding: 12px;
-}
+  padding: 20px;
 
-@media screen and (min-width: 400px) {
+}
+/* nav h1 a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  display: block;
+  padding: 20px;
+} */
+
+/* @media screen and (min-width: 400px) {
   nav h1 a {
     font-size: 1rem;
     letter-spacing: 5px;
-    padding: 15px;
+
   }
-}
+} */
 
 
 @media screen and (min-width: 768px) {
@@ -123,12 +139,13 @@ nav h1 a {
 }
 
 #breadcrumb {
-    padding: 10px 40px 16px;
+    padding: 10px 20px;
     list-style: none;
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+    /* width: calc(50% - 80px); */
+    width: 100%;
 }
 
 /* Display list items side by side */
@@ -423,7 +440,7 @@ nav h1 a {
 /* ====================== Restaurant Details ====================== */
 .inside header {
   position: fixed;
-  top: 0;
+  top: 0px;
   width: 100%;
   z-index: 1000;
 }
@@ -437,7 +454,7 @@ nav h1 a {
   /* position: fixed; */
   right: 0;
   position: absolute;
-  top: 80px;
+  top: 108px;
 
 }
 
@@ -472,13 +489,12 @@ nav h1 a {
 
 @media screen and (min-width: 768px) {
   .inside #footer {
-
-    width: 50%;
+position: fixed;
+    width: 100%;
+    bottom: 0px;
   }
 
 }
-
-
 
 
 #restaurant-name {
@@ -518,6 +534,13 @@ nav h1 a {
   text-transform: uppercase;
 	width: 90%;
 }
+
+#restaurant-container {
+
+
+}
+
+
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
