@@ -212,10 +212,7 @@ nav h1 {
 
 }
 
-.leaflet-marker-icon .leaflet-zoom-animated .leaflet-interactive {
 
-  tabindex: -1;
-}
 
 .leaflet-container .leaflet-control-attribution, .leaflet-container .leaflet-control-scale {
   font-size: 0.6rem;
@@ -382,7 +379,6 @@ nav h1 {
   background-color: orange;
   border-bottom: 3px solid #eee;
   color: #000;
-  /* color: #fff; */
   display: inline-block;
   font-size: 9pt;
   margin: 10px 0 0;
