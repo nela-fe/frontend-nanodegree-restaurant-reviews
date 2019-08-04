@@ -381,7 +381,7 @@ nav h1 {
     height: 87%;
     position: fixed;
     right: 0;
-    top: 80px;
+    top: 109px;
     width: 50%;
   }
 }
@@ -443,21 +443,13 @@ nav h1 {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
+  padding: 300px 40px 30px;
   width: 100%
-}
-
-@media screen and (min-width: 576px) {
-  #restaurant-container, #reviews-container {
-      padding: 140px 40px 30px;
-  }
 }
 
 @media screen and (min-width: 768px) {
   #restaurant-container, #reviews-container {
       width: 50%;
-      border-bottom: 1px solid #d9d9d9;
-      border-top: 1px solid #fff;
       padding: 140px 40px 30px;
   }
 }
